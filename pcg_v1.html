@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content=
+"width=device-width, initial-scale=0.8">
+<title>📃📲 PCG mobile</title>
+<style>
+* {font-family:Arial,Helvetica,sans-serif}
+ul {list-style-type:none;
+    } 
+.sl {font-size:90%;
+     font-style:italic;
+     color:gray;}
+.navig {font-size:75%;
+        overflow:hidden;
+        float:top;        
+        padding:0% 0% 10% 0%;
+        }
+.ancre1 {color:white;
+        padding:2% 2%;
+        background-color:gray;
+        }
+.ancre2 {color:white;
+         padding:2% 2%;
+         background-color:#444;}                     
+</style>
+</head>
+<body>
+<nav id="tête">
+<div class="navig">
+<a href="#cl2" class="ancre1">Class 2</a>
+<a href="#cl3" class="ancre1">Class 3</a>
+<a href="#cl4" class="ancre1">Class 4</a>
+<a href="#cl5" class="ancre1">Class 5</a>
+<a href="#cl6" class="ancre2">Class 6</a>
+<a href="#cl7" class="ancre2">Class 7</a>
+</div>
+<input type="search" id="myInput" 
+ style="background-position: 5px 10px;
+  background-size:40px;
+  background-repeat: no-repeat;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;"
+onkeyup="myFunction()" placeholder="🔎 Entrez mots clés ou n° de compte" title="Tapez le n° de compte">
+</nav>
+<h2 style="background-color:#4682B4;color:white"><center>COMPTES DE BILAN</center></h2>
+<h3>Class 1: <b style="color:#4682B4">COMPTES DES CAPITAUX</b></h3>
+<ul id="myUl">
+ <li><h3>10 - Capital,reserves et assimilés</h3></li>
+ <li>101 • Capital</li>
+  <div class="sl">
+   <li>1011. Capital souscrit-non appelé</li>
+   <li>1012. Capital souscrit-appelé,non versé</li>
+   <li>1013. Capital souscrit-appelé,versé</li>
+  </div>
+ <li>104 • Primes liées au capital social</li>
+  <div class="sl">
+   <li>1041. Primes d'émission</li>
+   <li>1042. Primes de fusion</li>
+   <li>1043. Primes d'apport</li>
+   <li>1044. Primes de conversion d'obligations en actions</li>
+  </div>
+ <li>105 • Ecarts d'évaluation</li>
+  <div class="sl">
+   <li>1052. Ecart de réevaluation libre</li>
+   <li>1058. Autres écarts de réevaluation à l'étranger</li>
+  </div>
+ <li>106 • Réserves</li>
+  <div class="sl">
+  <li>1061. Réserve légale</li>
+  <li>1062. Réserves facultatives</li>
+  <li>1063. Réserves statuaires ou contractuelles</li>
+  <li>1064. réserves réglementées</li>
+  <li>1068. Autres réserves</li>
+  </div>
+ <li>107 • Ecart d'équivalence</li>
+ <li>108 • Compte de l'éxploitant</li>
+ <li>109 • Actionnaires: capital souscrit-non appelé</li> 
+ <li><h3>11 - Report à nouveau (solde créditeur/débiteur)</h3></li>
+ <li>110 • Report à nouveau solde créditeur</li>
+ <li>119 • Report à nouveau solde débiteur</li>
+ <li><h3>12 - Résultat de l'éxercice</h3></li>
+ <li>120 • Résultat de l'éxercice Bénéfice</li>
+ <li>121 • Résultat en instance d'afféctation</li>
+ <li>129 • résultat de l'éxercice Perte</li>
+ <li><h3>13 - Produits et charges différés,hors cycle d'éxloitation</h3></li>
+ <li>131 • Subventions d'équipement</li>
+  <div class="sl">
+  <li>1311. Etat</li>
+  <li>1312. Régions</li>
+  <li>1313. Départements</li>
+  <li>1314. Communes</li>
+  <li>1315. Colléctivités publiques</li>
+  <li>1316. Entreprises publiques</li>
+  <li>1317. Entreprises et organismes privés</li>
+  <li>1318. Autres</li>
+  </div>
+ <li>132 • Autres subventions d'investissement</li>
+ <li>133 • Impôts différés Actifs</li>
+ <li>134 • Impôts différés Passifs</li>
+ <li>138 • Autres produits et charges différés</li>
+ <li><h3>14 - (Disponible)</h3></li>
+ <li><h3>15 - Provisions pour charges-Passifs non courants</h3></li>
+ <li>153 • Provisions pour pensions et obligations similaires</li>
+ <li>155 • Provisions pour impôts</li>
+ <li>156 • Provisions pour renouvellement des immobilisations (entreprise concéssionnaire)</li>
+ <li>158 • Autres provisions pour charges-Passifs non courants</li> 
+ <li><h3>16 - Emprunts et dettes assimilés</h3></li>
+ <li>161 • Emprunts obligataires convertibles</li>
+ <li>163 • Autres emprunts obligataires</li>
+ <li>164 • Emprunts auprès des établissements de crédit</li>
+ <li>165 • Dépôts et cautionnements reçus</li>
+ <li>167 • Dettes sur contrat de location/financement</li>
+ <li>168 • Autres emprunts et dettes assimilées</li>
+  <div class="sl">
+   <li>1681. Autres emprunts</li>
+   <li>1688. Interêts courus</li>
+  </div>
+ <li>169 • Primes de remboursement des obligations</li>
+ <li><h3>17 - Dettes rattachées à des participations</h3></li>
+ <li>171 • Dettes rattachées à des participations groupe</li>
+ <li>172 • Dettes rattachées à des participations hors groupe</li>
+ <li>173 • Dettes rattachées à des sociétés en participations</li>
+ <li>178 • Autres dettes rattachées à des participations</li>
+  <div class="sl">
+   <li>1781. Principal</li>
+   <li>1788. Interêt courus</li>
+  </div>
+ <li><h3>18 - Comptes de liaison des établissements et sociétés en participation</h3></li>
+ <li>181 • Comptes de liaison entre établissements</li>
+ <li>188 • Comptes de liaison entre société en participation</li>
+ <li><h3>19 - (Disponible)</h3></li>
+</ul>
+<table id="cl2"><tr><td style="width:75px"><h3>Class 2: </h3></td><td><h3><b style="color:#4682B4">COMPTES D'IMMOBILISATIONS</b></h3></td></tr></table>
+<ul>
+ <li><h3>20 - Immobilisations incorporelles</h3></li>
+ <li>203 • Frais de developpement immobilisables</li>
+ <li>204 • Logiciels informatiques et assimilés</li>
+ <li>205 • Concéssions et droits similaires,brevets,licences,marques,logiciels</li>
+ <li>207 • Fonds commercial</li>
+ <li>208 • Autres immobilisations incorporelles</li>
+ <li><h3>21 - Immobilisations corporelles</h3></li>
+ <li>211 • Terrains</li>
+ <li>212 • Agencements et aménagements de terrain</li>
+ <li>213 • Construction</li>
+  <div class="sl">
+  <li>2131. Batiments</li>
+  <li>2135. Instalation générales-agencement-aménagement des constructions</li>
+  </div>
+ <li>215 • Installations téchniques,matériels et outillages industriels</li>
+  <div class="sl">
+  <li>2151. Installations complexes spécialisées</li>
+  <li>2154. Matériel industriel</li>
+  <li>2155. Outillage industriel</li>
+  <li>2157. Agencements et aménagements du matériel et outillages industriels</li>
+  </div>
+ <li>218 • Autres immobilisations corporelles</li>
+  <div class="sl">
+  <li>2181. Installations générales,agencements,aménagements divers</li>
+  <li>2182. Matériel de transport</li>
+  <li>2183. Matériel de bureau et matériel informatique</li>
+  <li>2184. Mobilier</li>
+  <li>2185. Cheptel</li>
+  <li>2186. Matériel d'emballage</li>
+  </div>
+ <li><h3>22 - Immobilisations mises en concéssion</h3></li>
+ <li>221 • Terrain en concéssion</li>
+ <li>222 • Agencements et aménagements de terrain en concéssion</li>
+ <li>223 • Construction en concéssion</li>
+ <li>225 • Installations téchniques en concéssion</li>
+ <li>228 • Autres immobilisations corporelles en concéssion</li>
+ <li>229 • Droits du concédant</li>
+ <li><h3>23 - Immobilisations en cours</h3></li>
+ <li>232 • Immobilisations corporelles en cours</li>
+ <li>237 • Immobilisations incorporelles en cours</li>
+ <li>238 • Avance et acompte versés sur commandes d'immobilisations</li> 
+ <li><h3>24 - (Disponible)</h3></li>
+ <li><h3>25 - (Disponible)</h3></li>
+ <li><h3>26 - Participations et créances rattachées à des participations</h3></li>
+ <li>261 • Titres de participation</li>
+  <div class="sl">
+  <li>2611. Actions</li>
+  <li>2612. Autres titres</li>
+  <li>2618. Interêts courus</li>
+  </div>
+ <li>262 • Autres formes de participations</li>
+ <li>265 • Titres de participation évalués par équivalences</li>
+ <li>266 • Créances rattachées à des participations groupe</li>
+ <li>267 • Créances rattachées à des participations hors groupe</li>
+ <li>268 • Créances rattachées à des sociétés en participation</li>
+ <li>269 • Versements restant à éfféctuer sur titre de participation non libérés</li>
+ <li><h3>27 - Autres immobilisations financières</h3></li>
+ <li>271 • Titres immobilisés autres que les titres immobilisés de l'activité de portefeuille</li>
+  <div class="sl">
+  <li>2711. Actions</li>
+  <li>2718. Autres titres</li>
+  </div>
+ <li>272 • Titres représentatifs de droit de créance (obligations,bons..)</li>
+ <li>273 • Titres immobilisés de l'activité de portefeuille</li>
+ <li>274 • Prêts</li>
+  <div class="sl">
+  <li>2741. Prêts participatifs</li>
+  <li>2742. Prêts aux associés</li>
+  <li>2743. Prêts aux personnel</li>
+  <li>2748. Autres prêts</li>
+  </div>
+ <li>275 • Dépôts et cautionnements versés</li>
+  <div class="sl">
+  <li>2751. Dépôts versé</li>
+  <li>2755. Cautionnements versé</li>
+  </div> 
+ <li>276 • Autres créances immobilisées</li>
+ <li>277 • Actions propres ou parts propres</li>
+ <li>279 • Versements restant à éfféctuer sur titres immobilisés non libérés</li>
+ <li><h3>28 - Amortissements des immobilisations</h3></li>
+ <li>280 • Amortissements des immobilisations incorporelles</li>
+  <div class="sl">
+  <li>2803. Frais de developpement immobilisables</li>
+  <li>2804. Logiciels informatiques et assimilés</li>
+  <li>2805. Concéssion et droit similaires,brevets,licences,logiciels</li>
+  <li>2807. Fonds commercial</li>
+  <li>2808. Autres immobilisations incorporelles</li>
+  </div>
+ <li>281 • Amortissements des immpbilisations corporelles</li>
+  <div class="sl">
+  <li>2811. Terrains de gisement</li>
+  <li>2812. Agencement,aménagements de terrains</li>
+  <li>2813. Constructions</li>
+   <ul>
+   <li>28131/ Batiments</li>
+   <li>28135/ Installation générales,agencements</li>
+   </ul>
+  <li>2815. Installations téchniques</li>
+   <ul>
+   <li>28151/ Installations complexes spécialisées</li>
+   <li>28154/ Matériel industriel</li>
+   <li>28155/ Outillage industriel</li>
+   <li>28157/ Agencement et aménagements du matériel</li>
+   </ul>
+  <li>2818. Autres immobilisations corporelles</li>
+   <ul>
+   <li>28181/ Installation générales,agencements,aménagements divers</li>
+   <li>28182/ Matériel de transport</li>
+   <li>28183/ Matériel de bureau et matériel informatique</li>
+   <li>28184/ Mobilier</li>
+   <li>28185/ Ceptel</li>
+   <li>28186/ Emballages récupérables</li>
+   </ul>
+  </div>
+ <li>282 • Amortissements des immobilisations mises en concéssion</li>
+ <li><h3>29 - Pertes de valeur sur immobilisations</h3></li>
+ <li>290 • Perte de valeur sur immobilisations incorporelles</li>
+ <li>291 • Perte de valeur sur immobilisations corporelles</li>
+ <li>292 • Perte de valeur sur immobilisations mise en concéssion</li>
+ <li>293 • Perte de valeur sur immobilisations en cour</li>
+ <li>296 • Perte de valeur sur participations et créances rattachées à des participations</li>
+ <li>297 • Perte de valeur sur autre immobilisations financières</li>
+</ul> 
+<table id="cl3"><tr><td style="width:75px"><h3>Class 3: </h3></td><td><h3><b style="color:#4682B4">COMPTES DE STOCKS ET EN COURS</b></h3></td></tr></table>
+<ul>
+ <li><h3>31 - Matières premières et fournitures</h3></li>
+ <li><h3>32 - Autres approvisionnements</h3></li>
+ <li>321 • Matières consommables</li>
+ <li>322 • Fournitures consommables</li>
+  <div class="sl">
+  <li>3221. Combustibles</li>
+  <li>3222. Produits d'entretien</li>
+  <li>3223. Fournitures d' atelier et d'usine</li>
+  <li>3224. Fournitures de magasin</li>
+  <li>3225. Fournitures de bureau</li>
+  </div>
+ <li>326 • Emballages</li>
+  <div class="sl">
+  <li>3261. Emballages perdus</li>
+  <li>3265. Emballages récupérables non identifiables</li>
+  <li>3267. Emballages à usage mixte</li>
+  </div> 
+ <li><h3>33 - En-cours de production de biens</h3></li>
+ <li>331 • Produits en cours</li>
+ <li>335 • Travaux en cours</li>
+ <li><h3>34 - En-cours de production de services</h3></li>
+ <li>341 • Etudes en cours</li>
+ <li>345 • Préstations de services en cours</li>
+ <li><h3>35 - Stocks de produits</h3></li>
+ <li>351 • Produits intermédiaires</li>
+ <li>355 • Produits finis</li>
+ <li>358 • Produits résiduels ou matières de récupération</li>
+  <div class="sl">
+  <li>3581. Déchets</li>
+  <li>3585. Rébuts</li>
+  <li>3586. Matières de récupération</li>
+  </div>
+ <li><h3>36 - (Disponible)</h3></li>
+ <li><h3>37 - Stocks de marchandises</h3></li>
+ <li><h3>38 - Stocks à l'éxtérieur (en cours de route,en dépot ou en consignation)</h3></li>
+ <li><h3>39 - Perte de valeur sur stock et en-cours</h3></li>
+ <li>391 • Pertes de valeurs matière premières et fournitures</li>
+ <li>392 • Pertes de valeurs autres approvisionnements</li>
+  <div class="sl">
+  <li>3921. Matière consommables</li>
+  <li>3922. Fournitures consommables</li>
+   <ul>
+   <li>39221/ Combustibles</li>
+   <li>39222/ Produits d'entretien</li>
+   <li>39223/ Fournitures d'atelier et d'usine</li>
+   <li>39224/ Fourniture de magasin</li>
+   <li>39225/ Fourniture de bureau</li>
+   </ul>
+  </div>
+ <li>393 • Pertes de valeurs en-cours de production de biens</li>
+ <li>394 • Pertes de valeurs en-cours de production de services</li>
+ <li>395 • Pertes de valeurs stocks de produits</li>
+ <li>397 • Pertes de valeurs stocks de marchandises</li>
+ <li>398 • Pertes de valeurs stocks à l'éxtérieur</li>
+</ul> 
+<h3 id="cl4">Class 4: <b style="color:#4682B4">COMPTES DE TIERS</b></h3>
+<ul>
+ <li><h3>40 - Fournisseurs et comptes rattachés</h3></li>
+ <li>401 • Fournisseurs de biens et services</li>
+  <div class="sl">
+  <li>4011. Malagasy...</li>
+  <li>4017. Etranger</li>
+  </div>
+ <li>403 • Fournisseurs de biens et services,éffets à payer</li>
+ <li>404 • Fournisseurs d'immobilisations</li>
+ <li>405 • Fournisseurs d'immobilisations,éffets à payer</li>
+ <li>408 • Fournisseurs factures non parvenues</li>
+  <div class="sl">
+  <li>4088. Fournisseurs-Intérêts courus</li>
+  </div>
+ <li>409 • Fournisseurs débiteurs: avance et compte,RRR à obtenir,autres créances</li>
+  <div class="sl">
+  <li>4091. Avances et acompte versés sur commande</li>
+  <li>4096. Fournisseurs-emballages et matériel à rendre</li>
+  <li>4098. Rabais,remises,ristournes à obtenir et autre avoirs non encore reçus</li>
+  </div>
+ <li><h3>41 - Clients et comptes rattachés</h3></li>
+ <li>411 • Clients</li>
+  <div class="sl">
+  <li>4111. Malagasy...</li>
+  <li>4112. Etranger</li>
+  </div>
+ <li>413 • Clients effet à récevoir</li>
+ <li>414 • Effet à l'encaissement</li>
+ <li>415 • Effet remis à l'éscompte</li>
+ <li>416 • Clients douteux ou litigeux</li>
+ <li>417 • Créanciers sur travaux non encore facturables</li>
+ <li>418 • Clients-Produits non encore facturés</li>
+  <div class="sl">
+  <li>4181. Client-Factures à établir</li>
+  <li>4182. Client-Intérêts courus</li>
+  </div>
+ <li>419 • Clients créditeurs</li>
+  <div class="sl">
+  <li>4191. Client et avances reçus sur commandes</li>
+  <li>4196. Clients dettes sur emballages et matériels consignés</li>
+  <li>4197. Clients-Autres avoirs</li>
+  <li>4198. Rabais,remises,ristournes, à accorder et autres avoirs à établir</li>
+  </div>
+ <li><h3>42 - Personnel et comptes rattachés</h3></li>
+ <li>421 • Personnel,rémunérations dues</li>
+ <li>422 • Fond sociaux-Œuvres sociales</li>
+ <li>425 • Personnel-Avances et comptes accordés</li>
+ <li>426 • Personnel-Dépôts reçus</li>
+ <li>427 • Personnel-Oppositions</li>
+ <li>428 • Personnel-Charges à payer et produits à recevoir</li>
+  <div class="sl">
+  <li>4286. Charges à payer</li>
+  <li>4287. Produits à recevoir</li>
+  </div>
+ <li><h3>43 - Organismes sociaux et comptes rattachés</h3></li>
+ <li>431 • Organismes sociaux A (CNaPS)</li>
+ <li>432 • Organismes sociaux B (OSIE,OSTIE..)</li>
+ <li>438 • Orgabismes sociaux-Charges à payer</li>
+  <div class="sl">
+  <li>4382. Charges sociales sur congés à payer</li>
+  <li>4386. Autres charges à payer</li>
+  <li>4387. Produits à recevoir</li>
+  </div>
+ <li><h3>44 - Etat,colléctivités publiques,organismes internationaux</h3></li>
+ <li>441 • Etat-Subventions à recevoir</li>
+  <div class="sl">
+  <li>4411. Subvention  d'investissement</li>
+  <li>4417. Subvention d'exploitation</li>
+  </div>
+ <li>442 • Etat-Impôts et taxes recouvrables sur des tiers</li>
+ <li>443 • Opérations particulières avec l'Etat,les colléctivités publiques,les organismes internationaux</li>
+ <li>444 • Etat-Impôts sur les résultats (Bénéfices)</li>
+ <li>445 • Etat-Taxes sur les chiffres d'affaires</li>
+  <div class="sl">
+  <li>4454. Crédit de taxes/Etat,TVA à décaisser</li>
+  <li>4455. Taxes sur le chiffre d'affaires à décaisser/Etat,TVA à imputer sur les déclarations ultérieurs</li>
+  <li>4456. Etat,TVA déductibles</li>
+  <li>4457. Etat,TVA colléctées par l'entreprises</li>
+  <li>4458. Etat,TVA à régulariser</li>
+  </div>
+ <li>446 • Etat,IGR à verser</li>
+ <li>447 • Autres impôts,taxes et versements assimilés</li>
+ <li>448 • Etat,charges à payer et produits à recevoir</li>
+  <div class="sl">
+  <li>4482. Charges fiscales sur congés à payer</li>
+  <li>4486. Charges à payer</li>
+  <li>4487. Produits à recevoir</li>
+  </div>
+ <li>449 • Quotas d'émission à réstituer à l'Etat</li>
+ <li><h3>45 - Groupe et associés</h3></li>
+ <li>451 • Opérations groupe</li>
+ <li>455 • Associés-Comptes courants</li>
+  <div class="sl">
+  <li>4551. Principal</li>
+  <li>4558. Intérêts courus</li>
+  </div>
+ <li>456 • Associés,opérations sur capital</li>
+  <div class="sl">
+  <li>4561. Associés comptes d'apport en société</li>
+   <ul>
+   <li>45611/ Apports en nature</li>
+   <li>45615/ Apports en numéraire</li>
+   </ul>
+  <li>4562. Apporteurs capital appelé,non versé</li>
+   <ul>
+   <li>45621/ Actionnaires capital souscrit et appelé,non versé</li>
+   <li>45625/ Associés capital appelé,non versé</li>
+   </ul>
+  <li>4563. Associés-Versements reçus sur augmentation de capital</li>
+  <li>4564. Associés-Versements anticipés</li>
+  <li>4566. Actionnaires défaillants</li>
+  <li>4567. Associés-Capital à rembourser</li>
+  </div>
+ <li>457 • Associés-Dividendes à payer</li>
+ <li>458 • Associés-Opérations faites en commun et en groupement (GIE)</li>
+  <div class="sl">
+  <li>4581. Opérations courantes</li>
+  <li>4588. Intérêt courus</li>
+  </div>
+ <li><h3>46 - Débiteurs/créditeurs divers</h3></li>
+ <li>462 • Créances sur céssions d'immobilisations</li>
+ <li>464 • Dettes sur acquisitions de valeurs mobilières de placement</li>
+ <li>465 • Créances sur céssions de valeurs mobilières de placement</li>
+ <li>467 • Autres comptes débiteurs/créditeurs</li>
+ <li>468 • Divers charges à payer ou produits à recevoir</li>
+  <div class="sl">
+  <li>4686. Charges à payer</li>
+  <li>4687. Produits à recevoir</li>
+  </div> 
+ <li><h3>47 - Comptes transitoires ou d'attente</h3></li>
+ <li><h3>48 - Charges ou produits constatés d'avance et provisions</h3></li>
+ <li>481 • Provisions-Passifs courants</li>
+ <li>486 • Charges constatées d'avance</li>
+ <li>487 • Produits constatées d'avance</li>
+ <li><h3>49 - Perte de valeur sur compte de tiers</h3></li>
+ <li>491 • Pertes de valeur sur comptes de clients</li>
+ <li>495 • Pertes de valeur sur comptes du groupe et des associés</li>
+ <li>496 • Pertes de valeur sur comptes de débiteurs divers</li>
+</ul> 
+<h3 id="cl5">Class 5: <b style="color:#4682B4">COMPTES FINANCIERS</b></h3>
+<ul>
+ <li><h3>50 - Valeurs mobiliers de placement</h3></li>
+ <li>501 • Parts dans les entreprises liées</li>
+ <li>502 • Prêt à court termes</li>
+ <li>503 • Actions</li>
+ <li>504 • Autres titres conférant un droit de propriété</li>
+ <li>505 • Obligations et bons émis par la société et rachetés par elle.</li>
+ <li>506 • Obligations</li>
+ <li>507 • Bons du trésor et bons de caisse à court tèrme</li>
+ <li>508 • Autres valeurs mobilières de placement et autres créances assimilées</li>
+  <div class="sl">
+  <li>5081. Autres valeurs mobilières</li>
+  <li>5082. Bons de souscription</li>
+  <li>5088. Intérêts courus sur obligations,bons et valeurs assimilées</li>
+  </div>
+ <li>509 • Versements restant à éffectuer sur valeurs mobilières de placement non libérées</li>
+ <li><h3>51 - Banque,établissements financiers et assimilés</h3></li>
+ <li>511 • Valeurs àl'encaissement</li>
+  <div class="sl">
+  <li>5111. Coupons échus à l'encaissement</li>
+  <li>5112. Chèque à encaisser</li>
+  <li>5113. Effet à l'encaissement</li>
+  <li>5114. Effets à l'éscompte</li>
+  </div>
+ <li>512 • Banques</li>
+  <div class="sl">
+  <li>5121. Comptes en monnaie nationale</li>
+  <li>5124. Comptes en devises</li>
+  </div>
+ <li>514 • Chèques postaux</li>
+ <li>515 • Caisse du trésor publics et établissements publics</li>
+ <li>516 • Emprunts à cours tèrme</li>
+ <li>517 • Autres organismes financiers (MVola,Orange money...)</li>
+  <div class="sl">
+  <li>5171. Centre Chèques Postaux (CCP)</li>
+  </div>
+ <li>518 • Intérêts courus</li>
+  <div class="sl">
+  <li>5181. Intérêts courus à payer</li>
+  <li>5187. Intérêts courus à recevoir</li>
+  </div>
+ <li>519 • Concours bancaires courants</li>
+  <div class="sl">
+  <li>5191. Crédit de mobilisation de créances commerciales (CMMCC)</li>
+  <li>5193. Mobilisation de créances nées à l'étranger</li>
+  <li>5198. Intérêts courus sur concours bancaires courants</li>
+  </div>
+ <li><h3>52 - Instruments de trésorerie</h3></li>
+ <li><h3>53 - Caisse</h3></li>
+ <li><h3>54 - Régies d'avance et accréditifs</h3></li>
+ <li><h3>55 - (Disponible)</h3></li>
+ <li><h3>56 - (Disponible)</h3></li>
+ <li><h3>57 - (Disponible)</h3></li>
+ <li><h3>58 - Virements internes</h3></li>
+ <li>581 • Virements de fonds</li>
+ <li>588 • Autres virements internes</li>
+ <li><h3>59 - Perte de valeur sur comptes financiers</h3></li>
+ <li>591 • Perte de valeur sur valeur en banque et établissements financièrs</li>
+ <li>594 • Perte de valeur sur régie d'avance et accréditifs</li>
+</ul> 
+<h2 style="background-color:#4682B4;color:white"><center>COMPTES DE GESTION</center></h2>
+<table id="cl6"><tr><td><h3>Class 6: </h3></td><td></td><td><h3><b style="color:#4682B4">COMPTES DE CHARGES<br>(imputation par nature)</b></h3></td></tr></table>
+<ul>
+ <li><h3>60 - Achats consommés</h3></li>
+ <li>601 • Matière première</li>
+ <li>602 • Autres approvisionnements</li>
+  <div class="sl">
+  <li>6021. Matière consommables</li>
+  <li>6022. Fournitures consommables</li>
+   <ul>
+   <li>60221/ Combustibles</li>
+   <li>60222/ Produits s'entretien</li>
+   <li>60223/ Fournitures d'atelier et d'usine</li>
+   <li>60225/ Fournitures de bureau</li>
+   </ul>
+  <li>6023. Emballages</li>
+   <ul>
+   <li>60231/ Emballages perdus</li>
+   <li>60235/ Emballages récupérables</li>
+   <li>60237/ Emballages à usage mixte</li>
+   </ul>
+  </div>
+ <li>603 • Variations des stocks</li>
+  <div class="sl">
+  <li>6031. Variation de stock des matières premières et fournitures</li>
+  <li>6032. Variation de stock d'autres  approvisionnements</li>
+  <li>6037. Variation de stock des marchandises</li>
+  </div>
+ <li>604 • Achats d'études et de préstations de services</li>
+ <li>605 • Achats de matériel,équipements et travaux</li>
+ <li>606 • Achats non stockés de matières et fournitures</li>
+  <div class="sl">
+  <li>6061. Eau et électricité</li>
+  <li>6062. Carburants,gaz,lubrifiants,copbustibles</li>
+  <li>6063. Fourniture d'entretien et de petit équipement</li>
+  <li>6064. Fourniture administratives</li>
+  <li>6068. Autres matières et fournitures</li>
+  </div>
+ <li>607 • Achats de marchandises</li>
+ <li>608 • Frais accesoires d'achat</li>
+ <li>609 • Rabais,remises et ristournes obtenus sur achats</li>
+  <div class="sl">
+  <li>6091. de matières premières (et fournitures)</li>
+  <li>6092. d'autres  approvisionnements stockés</li>
+  <li>6094. d'études et préstations de services</li>
+  <li>6095. de matériel,équipements et travaux</li>
+  <li>6096. d'approvisionnements non stockés</li>
+  <li>6097. de marchandises</li>
+  <li>6098. Rabais,remises et ristournes non afféctés</li>
+  </div>
+ <li><h3>61 - Services éxtérieurs</h3></li>
+ <li>611 • Sous-traitance générale</li>
+ <li>612 • Redevances de crédit-bail</li>
+ <li>613 • Locations</li>
+  <div class="sl">
+  <li>6132. Location immobilières</li>
+  <li>6135. Location mobilières</li>
+  <li>6136. Malis sur emballage</li>
+  </div>
+ <li>614 • Charges locatives et charges copropriété</li>
+ <li>615 • Entretien,réparation et maintenance</li>
+ <li>616 • Primes d'assurances</li>
+ <li>617 • Etudes et recherces</li>
+ <li>618 • Documentation et divers</li>
+  <div class="sl">
+  <li>6181. Documentation générale</li>
+  <li>6182. Documentation technique</li>
+  <li>6183. Frais de colloques,séminaires, conférences</li>  
+  </div>
+ <li>619 • Rabais,remises,ristournes obtenus sur services éxtérieurs</li>
+ <li><h3>62 - Autres services éxtérieurs</h3></li>
+ <li>621 • Personnel éxtérieur à l'entreprise</li>
+ <li>622 • Rémunérations d'intermédiaires et honoraires</li>
+  <div class="sl">
+  <li>6221. Commissions et courtages sur achats</li>
+  <li>6222. Commissions et courtages sur ventes</li>
+  <li>6224. Rémunérations et transitaires</li>
+  <li>6225. Rémunérations d'affacturages</li>
+  <li>6226. Honoraires</li>
+  <li>6227. Frais d'actes et de contentieux</li>
+  <li>6228. Divers</li>
+  </div>
+ <li>623 • Publicité,publication,relations publiques</li>
+  <div class="sl">
+  <li>6231. Annonces et insertions</li>
+  <li>6232. Echantillons</li>
+  <li>6233. Foires et éxpositions</li>
+  <li>6234. Cadeaux à la clientèle</li>
+  <li>6235. Primes</li>
+  <li>6236. Catalogues et imprimé</li>
+  <li>6237. Publications</li>
+  <li>6238. Divers (pour boires,dons courants...)</li>
+  </div>
+ <li>624 • Transports de biens et transports colléctifs du personnel</li>
+  <div class="sl">
+  <li>6241. Transports sur achats</li>
+  <li>6242. Transports sur ventes</li>
+  <li>6243. Transports entre établissements ou chantiers</li>
+  <li>6244. Transports admninistratifs</li>
+  <li>6247. Transports collectifs du personel</li>
+  <li>6248. Divers</li>
+  </div>
+ <li>625 • Déplacements,missions et récéptions(fête)</li>
+  <div class="sl">
+  <li>6251. Voyages et déplacements</li>
+  <li>6255. Frais de  déménagement</li>
+  <li>6256. Missions</li>
+  <li>6257. Réceptions</li>
+  </div>
+ <li>626 • Frais postaux et de télécommunications</li>
+  <div class="sl">
+  <li>6261. Affranchissement</li>
+  <li>6262. Redevenus téléphoniques et télégrammes</li>
+  </div>
+ <li>627 • Services bancaires et assimilés</li>
+  <div class="sl">
+  <li>6271. Frais sur titres (achat,vente,garde)</li>
+  <li>6272. Commissions et frais sur émission d'emprunts</li>
+  <li>6275. Frais sur effets</li>
+  <li>6276. Locaton de coffre</li>
+  <li>6278. Autres frais et commissions sur prestations de services</li>
+  </div>
+ <li>628 • Cotisations et divers</li>
+  <div class="sl">
+  <li>6281. Concours divers (cotisations...)</li>
+  <li>6284. Frais de recrutement de personnel</li>
+  
+  </div>
+ <li>629 • Rabais,remises,ristournes obtenus sur autres services</li> 
+ <li><h3>63 - Impôts,taxes et versements assimilés</h3></li>
+ <li>631 • Impôts,taxes et versements sur rémunérations</li>
+ <li>635 • Autres impôts et taxes</li>
+ <li><h3>64 - Charges personnel</h3></li>
+ <li>641 • Rémunérations du personnel</li>
+  <div class="sl">
+  <li>6411. Salaires,appointements</li>
+  <li>6412. Congés payés</li>
+  <li>6413. Primes et gratifications</li>
+  <li>6414. Indemnités et avantages divers</li>
+  <li>6415. Supplément familial</li>
+  </div>
+ <li>644 • Rémunérations des dirigeants</li>
+ <li>645 • Cotisations aux organismes sociaux</li>
+ <li>646 • Charges sociales sur rémunérations des dirigeants</li>
+ <li>647 • Autres charges socials</li>
+ <li>648 • Autres charges du personnel</li>
+ <li><h3>65 - Autres charges des activités ordinaires</h3></li>
+ <li>651 • Redevances sur concéssions,brevets ,licences,marques,procédés,logiciels,droits et valeurs similaires</li>
+ <li>652 • Moins-values sur céssions d'actifs non courants</li>
+ <li>653 • Jetons de présence</li>
+ <li>654 • Pertes sur créances irrécouvrables</li>
+ <li>655 • Quote-parts de résultat sur opérations faites en commun</li>
+ <li>656 • Amandes et pénibilités,subventions accordées,dons et libéralités</li>
+ <li>657 • Charges éxcéptionnelles géstion courante</li>
+ <li>658 • Charges diverses de géstion courante</li>
+ <li><h3>66 - Charges financières</h3></li>
+ <li>661 • Charges d'intérêts</li>
+  <div class="sl">
+  <li>6611. Intérêts des emprunts et dettes</li>
+  <li>6615. Intérêts des comptes courants et des dépôts créditeurs</li>
+  <li>6616. Intérêts bancaires et sur opérations de financement (escompte...)</li>
+  <li>6618. Intérêts des autres dettes</li>
+  </div>
+ <li>664 • Pertes sur créances liées à des participations</li>
+ <li>665 • Moins-values sur titres de placement</li>
+ <li>666 • Pertes de change</li>
+ <li>667 • Moins-values sur instrument financiers et assimilés</li>
+ <li>668 • Autres charges financières</li>
+ <li><h3>67 - Eléments éxtraordinaires (charges)</h3></li>
+ <li><h3>68 - Dotations aux amortissements,provisions,pertes de valeurs</h3></li>
+ <li>681 • Dotations-actifs non courants</li>
+  <div class="sl">
+  <li>6811. Dotations aux amortissements sur immobilisation incorporelles et corporelles</li>
+  <li>6815. Dotations aux provisions et aux charges</li>
+  <li>6816. Dotations aux dépréciations des immobilisations incorporelles et corporelles</li>
+  </div>
+ <li>685 • Dotations-actifs courants</li>
+ <li><h3>69 - Impôts sur les bénéfices et assimilés</h3></li>
+ <li>692 • Imposition différée actif</li>
+ <li>693 • Imposition différée passif</li>
+ <li>695 • Impôts sur les bénéfices basés sur les résultats des activités ordinaires</li>
+ <li>698 • Autres impôts sur les résultats</li>
+</ul> 
+<h3 id="cl7">Class 7: <b style="color:#4682B4">COMPTES DE PRODUITS</b></h3>
+<ul>
+ <li><h3>70 - Ventes de produits fabriqués,marchandises,préstations</h3></li>
+ <li>701 • Ventes de produits finis</li>
+ <li>702 • Ventes de produits intermédiaires</li>
+ <li>703 • Ventes de produits résiduels</li>
+ <li>704 • Ventes de travaux</li>
+ <li>705 • Ventes d'études</li>
+ <li>706 • Ventes préstations de services</li>
+ <li>707 • Ventes de marchandises</li>
+ <li>708 • Produits des activités annexes</li>
+  <div class="sl">
+  <li>7082. Commissions et courtages</li>
+  <li>7083. Locations diverses</li>
+  <li>7084. Frais accessoire refacturés</li>
+  <li>7086. Bonis sur reprises d'emballages consignés</li>
+  <li>7088. Autres produits activités annexes</li>
+  </div>
+ <li>709 • Rabais,remises,ristournes accordés par l'entreprise</li>
+  <div class="sl">
+  <li>7091. sur vente de produits finis</li>
+  <li>7092. sur vente de produits intermédiaires</li>
+  <li>7094. sur travaux</li>
+  <li>7095. sur études</li>
+  <li>7096. sur prestations de services</li>
+  <li>7097. sur ventes de marchandises</li>
+  <li>7098. sur produits des activités annexes</li>
+  </div>
+ <li><h3>71 - Production stockée (ou déstockage)</h3></li>
+ <li>713 • Variations des stocks en-cours</li>
+  <div class="sl">
+  <li>7133. Variations des en-cours de productions de biens</li>
+  <li>7135. Variations des stocks de produits</li>
+  </div>
+ <li>714 • Variations des stocks de produits</li>
+ <li><h3>72 - Production immobilisée</h3></li>
+ <li>721 • Production immobilisée d'actif incorporel</li>
+ <li>722 • Production d'actif corporel</li>
+ <li><h3>74 - Subventions d'éxploitation</h3></li>
+ <li>741 • Subvention d'équilibre</li>
+ <li>748 • Autres subventions d'éxploitation</li>
+ <li><h3>75 - Autres produits opérationnels</h3></li>
+ <li>751 • Redevances pour concéssion,brevets,licences,marques, procédés,logiciels,droit et valeurs similaires</li>
+ <li>752 • Plus-values sur céssions d'actifs non courants</li>
+ <li>753 • Jetons de présence et rémunérations d'administrateur/gérant</li>
+ <li>754 • Quotes-parts de subvention d'investissements virés au résultat de l'écercice</li>
+ <li>755 • Quotes-parts de résultat sur opérations faites en commun</li>
+ <li>756 • Libéralités perçues,rentrées sur créances amorties</li>
+ <li>757 • Produits éxcéptionnels sur opérations de gestion</li>
+ <li>758 • Produits divers de gestion courante</li>
+ <li><h3>76 - Produits finaniers</h3></li>
+ <li>761 • Produits de participation</li>
+  <div class="sl">
+  <li>7611. Revenus des titres de participation</li>
+  <li>7616. Revenus sur autres formes de participation</li>
+  <li>7617. Revenus des créances rattachées à des participations</li>
+  </div>
+ <li>762 • Produits des autres immobilisations financières</li>
+  <div class="sl">
+  <li>7621. Revenus des titres immobilisés</li>
+  <li>7626. Revenus des prêts</li>
+  <li>7627. Revenus des créances immobilisées</li>
+  </div>
+ <li>763 • Revenus des autres créances</li>
+ <li>764 • Revenus et plus-values de valeurs mobilières de placement</li>
+ <li>766 • Gains de change</li>
+ <li>767 • Produits nets sur céssions de valeurs mobilières de placement</li>
+ <li>768 • Autres produits financiers</li>
+ <li><h3>77 - Eléments éxtraordinaires (produits)</h3></li>
+ <li><h3>78 - Reprises sur provisions et pertes de valeurs</h3></li>
+ <li>781 • Reprises d'éxploitation-actif non courantes</li>
+  <div class="sl">
+  <li>7811. Reprises sur amortissements des immobilisations incorporelles et corporelles</li>
+  <li>7815. Reprises sur provisions pour charges</li>
+  <li>7816. Reprises sur dépréciations des immobilisations incorporelles</li>
+  </div>
+ <li>785 • Reprises d'éxploitation-actif courantes</li>
+ <li>786 • Reprises financières</li>
+</ul> 
+<div style="border:1px solid black;margin:30px 80px;"><p><center><a href="#tête">Tout là haut 👆</a></center></p></div>
+
+<script>
+/* Declare variables */  
+function myFunction() {
+var input, filter, ul, li, h3, i;
+input=document.getElementById("myInput");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myUL");
+li = ul.getElementsByTagName("li");
+
+/* Loop through all list items, and hide
+ those who don't match the search query */ 
+
+for (i = 0; i < li.length; i++) {
+h3 = li[i].getElementsByTagName("h3")[0];
+
+if (h3.innerHTML.toUpperCase()
+.indexOf(filter) > -1) {
+  li[i].style.display = "";
+
+    } else {
+      li[i].style.display = "none";
+
+        }
+    }
+}
+
+</script>
+
+</body>
+<hr>
+<footer style="font-size:80%"><center>©2017 by E-liass<br/><br/><br/>-- All rights reserved --</center><br>
+<center>Prochaine version sur: 
+<style type="text/css">a{text-decoration:none;}</style>
+<a href="https://m.facebook.com/groups/586952994782301?view=files" title="Dans le fichier du group">https://web.facebook.com/group/apps&games</a></center><br><br>
+<h6>Plan comptable 2005 dispositions prévues par le déccret n°2004-272 18/02/04 (J.O n°2900 26/04/04)</h6>
+</footer>
+</html>
